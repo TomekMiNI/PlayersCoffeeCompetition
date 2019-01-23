@@ -1,0 +1,51 @@
+﻿<html>
+  <head>
+    <title>Supermug — the sports competition</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1> Supermug </h1>
+      <h2> The coffee drinking competition </h2>
+    </header>
+    <section id="playerlist"> 
+      <h1>Competitors</h1>
+      <button class="refresh">Refresh</button>
+      <div id="playerinfo">
+	        <h3>Player</h3> 
+            <ul>
+                <li><strong>First name</strong> <span id="pi_firstname"></span></li>
+                <li><strong>Number</strong> <span id="pi_number"></span></li>
+                <li><strong>Age</strong> <span id="pi_age"></span></li>
+                <li><strong>Experience</strong> <span id="pi_experience"></span></li>
+            </ul>
+      </div>
+        <ul>
+
+        </ul>
+    </section>
+    <section>
+      <h1>Add competitor</h1>
+      <form id="addform" class="addform">
+	<div class="formfield"><label for="player_number">Start Number</label><input type="number" name="number" id="player_number" /></div>
+	<div class="formfield"><label for="player_firstname">First name</label><input type="text" name="firstname" id="player_firstname" /></div>
+	<div class="formfield"><label for="player_age">Age (in years)</label><input type="number" name="age" id="player_age" /></div>
+	<div class="formfield"><label for="player_exp">Experience (in years)</label><input type="number" name="experience" id="player_exp"></div>
+	<div class="formfield"><button type="button" class="addbutton">Add player</button></div>
+      </form>
+    </section>
+    <section>
+      <h1>Competition</h1>
+      <button type="button" id="start_competition">Start competition</button>
+      <h2>Results</h2>
+      <div id="competition_results">
+      </div>
+    </section>
+    <section>
+      <h1>Messages</h1>
+      <ol id="messages"></ol>
+    </section>
+  </body>
+</html>
